@@ -7,8 +7,13 @@ cbmbasic: ext $(OBJS)
 	$(CC) -o cbmbasic $(OBJS)
 
 ext:
-	./fetchext
+	git clone https://github.com/matthewyang204/cbmbasic-extensions.git ext
+
+updateExt:
+	rm -rf ext
+	$(MAKE) ext
 
 clean:
 	rm -f $(OBJS) cbmbasic
 
+.PHONY: updateExt
