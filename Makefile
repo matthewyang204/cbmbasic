@@ -3,7 +3,7 @@ CFLAGS=-Wall -O3
 
 all: cbmbasic
 
-cbmbasic: $(OBJS)
+cbmbasic: ext $(OBJS)
 	$(CC) -o cbmbasic $(OBJS)
 
 ext:
