@@ -1,2 +1,5 @@
 cbmbasic
 *.o
+
+# Extensions repo
+/ext/

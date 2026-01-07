@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+git clone https://github.com/matthewyang204/cbmbasic-extensions.git ext

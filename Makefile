@@ -6,6 +6,9 @@ all: cbmbasic
 cbmbasic: $(OBJS)
 	$(CC) -o cbmbasic $(OBJS)
 
+ext:
+	./fetchext
+
 clean:
 	rm -f $(OBJS) cbmbasic
 
